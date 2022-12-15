@@ -1,15 +1,15 @@
 import random
 
-# Create a lucky dip ticket: create an empty array and set the ticket length (or number of digits to 0)
+# Create a lucky dip ticket: create an empty list and set the ticket length (or number of digits to 0)
 randomTicket = []
 ticketLength = 0
 
-# using a while loop, add a random integer to our array while the ticket length (or no. of digits) is less than 7 digits
+# using a while loop, add a random integer to our list while the ticket length (or no. of digits) is less than 7 digits
 while ticketLength < 7:
     number = random.randint(1, 40)
 
     if number not in randomTicket:
-        # We append the number in the lottery ticket (as long as it is not already in the random ticket array)
+        # We append the number in the lottery ticket (as long as it is not already in the random ticket list)
         randomTicket.append(number)
         # We increase our ticket length by 1 digit
         ticketLength = ticketLength + 1
@@ -17,16 +17,16 @@ while ticketLength < 7:
 # sort the numbers in the randomTicket
 randomTicket = sorted(randomTicket)
 
-# Time for the lottery draw: create an empty array for the winning ticket numbers and set the ticket length to 0
+# Time for the lottery draw: create an empty list for the winning ticket numbers and set the ticket length to 0
 winningTicket = []
 drawLength = 0
 
-# using a while loop, add a random integer to our array while the draw length (or no. of digits) is less than 7 digits
+# using a while loop, add a random integer to our list while the draw length (or no. of digits) is less than 7 digits
 while drawLength < 7:
     number = random.randint(1, 40)
 
     if number not in winningTicket:
-        # We append the number in the lottery ticket (as long as it is not already in the random ticket array)
+        # We append the number in the lottery ticket (as long as it is not already in the random ticket list)
         winningTicket.append(number)
         # We increase our ticket length by 1 digit
         drawLength = drawLength + 1
