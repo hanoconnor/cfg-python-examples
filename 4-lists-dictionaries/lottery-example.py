@@ -9,9 +9,9 @@ while ticketLength < 7:
     number = random.randint(1, 40)
 
     if number not in randomTicket:
-        # We append the number in the lottery ticket (as long as it is not already in the random ticket list)
+        # Append the number in the lottery ticket (as long as it is not already in the random ticket list)
         randomTicket.append(number)
-        # We increase our ticket length by 1 digit
+        # Increase ticket length by 1 digit
         ticketLength = ticketLength + 1
 
 # sort the numbers in the randomTicket
@@ -26,12 +26,12 @@ while drawLength < 7:
     number = random.randint(1, 40)
 
     if number not in winningTicket:
-        # We append the number in the lottery ticket (as long as it is not already in the random ticket list)
+        # Append the number drawn to the lottery ticket (as long as it is not already in the winning ticket list)
         winningTicket.append(number)
-        # We increase our ticket length by 1 digit
+        # Increase ticket length by 1 digit
         drawLength = drawLength + 1
 
-# sort the numbers in the winningTicket
+# Sort the lottery numbers in the winningTicket
 winningTicket = sorted(winningTicket)
 
 # Now using a for loop, assess the number of digits matched to the winning ticket
