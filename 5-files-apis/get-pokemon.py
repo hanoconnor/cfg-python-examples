@@ -1,3 +1,5 @@
+# Use a list to store about 6 Pokemon IDs. 
+# Then in a for loop call the API to retrieve the data for each Pokemon. Save their names and moves into a file.
 import requests
 
 # create list of your chosen pokemon ids
